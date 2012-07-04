@@ -12,12 +12,14 @@ $about = file_get_contents("about.html");
 <meta property="og:description" content="<?php echo $data->description?>">
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="css/style.css">
-<!--[if lt ie9]>
-<link rel="stylesheet" href="css/ie.css">
-<script src="js/html5.js"></script>
-<![endif]-->
 <link rel="shortcut icon" href="favicon.png">
-<body ontouchstart="">
+
+<!--[if lt IE9]>
+<div class="ie-bg" onclick="this.parentNode.removeChild(this)">
+    <div class="ie-must-die">IE MUST DIE</div>
+</div>
+<![endif]-->
+
 <nav class="main">
 	<ul>
 		<li><a href="#top">Top</a>
@@ -27,6 +29,7 @@ $about = file_get_contents("about.html");
 		<li><a href="//blog.nicksh.com" target="_blank">Blog</a>
 	</ul>
 </nav>
+
 <header id="top">
 	<div class="middle">
 		<h1 class="name"><a href="//nicksh.com">Nick Shvelidze</a></h1>
@@ -43,7 +46,8 @@ $about = file_get_contents("about.html");
 		</div>	
 	</div>
 </header>
-<nav class="mobile show-on-mobile show-on-ie">
+
+<nav class="mobile show-on-mobile">
 	<ul>
 		<li><a href="#about">About</a>
 		<li><a href="#works">Works</a>
@@ -51,13 +55,16 @@ $about = file_get_contents("about.html");
 		<li><a href="//blog.nicksh.com" target="_blank">Blog</a>
 	</ul>
 </nav>
+
 <div id="about">
 	<h1 class="title">About Me</h1>
 	<article>
 		<?php echo $about?>
 	</article>
 </div>
-<a class="top show-on-mobile show-on-ie" href="#top">Back to top</a>
+
+<a class="top show-on-mobile" href="#top">Back to top</a>
+
 <div id="works">
 	<h1 class="title">My Works</h1>
 	<div class="grid">
@@ -75,7 +82,9 @@ $about = file_get_contents("about.html");
 		<?php endforeach;?>
 	</div>
 </div>
-<a class="top show-on-mobile show-on-ie" href="#top">Back to top</a>
+
+<a class="top show-on-mobile" href="#top">Back to top</a>
+
 <div id="experiments">
 	<h1 class="title">My Experiments</h1>
 	<div class="grid">
@@ -93,5 +102,7 @@ $about = file_get_contents("about.html");
 		<?php endforeach;?>
 	</div>
 </div>
-<a class="top show-on-mobile show-on-ie" href="#top">Back to top</a>
+
+<a class="top show-on-mobile" href="#top">Back to top</a>
+
 <script src="js/all.js"></script>
