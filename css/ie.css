@@ -1,0 +1,122 @@
+* { 
+	max-width: 100% !important;	
+	behavior: url('../js/PIE.htc') !important;
+}
+
+head {
+	display: none;
+}
+
+body {
+	position: absolute;
+	top: 0;
+	z-index: 3;
+}
+
+.show-on-mobile, .show-on-ie {
+	display:block;
+}
+
+.hide-on-ie {
+	display: none;
+}
+
+#tiptip_holder {
+	display: none !important;
+}
+
+nav.main { 
+	display:none;
+}
+
+nav.mobile ul {
+	padding: 0;
+	margin: 0;
+	height: 2em;
+}
+
+nav.mobile {
+	background: #2d2d2d;
+}
+
+nav.mobile li {
+	float: left;
+}
+nav.mobile li a {	
+	padding-left: 0.5em;
+	line-height: 2em;
+	font-size: 2em;
+	color: white;
+	text-decoration: none;
+}
+
+#top, #about, #works, #experiments, #contact {
+	min-height: 0;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+#top {
+	height: auto;
+}
+
+.top {
+	background: #0099FF;
+	text-align: center;
+}
+
+.top a {
+	font-size: 150%;
+	line-height: 150%;
+	text-decoration: none;
+	color: white !important;
+}
+
+h1.name { 
+	height: auto; 
+	width: 100%;
+	font-size: 300%;
+}
+
+#about article {
+	padding: 0 0.5em 0 0.5em;
+	font-size: 140%;
+}
+
+h1.title {
+	font-size: 210%;
+}
+
+#contact form {
+	padding: 0 0.5em 0.5em 0.5em;
+}
+
+#contact .imhuman .indicator {
+	display: none;
+}
+
+#contact .imhuman .checkbox {
+	position: static;
+}
+
+.grid .tile .over {
+	opacity: 100;
+	background: #2d2d2d;
+}
+
+#contact form {
+	padding-bottom: 0;
+	font-size: 1.5em;
+}
+
+#contact form .imhuman {
+	font-size: 1.6em;
+}
+
+#top .social a {
+	font-size: 2em;
+}
+
+label span {
+	display: none;
+}
