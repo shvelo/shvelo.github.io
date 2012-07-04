@@ -332,7 +332,7 @@ nav.main a:hover {
 ---------------------------------------------------------------
 */
 
-@media (max-width:515px) {
+@media (max-width: 515px) {
 	
 * { 
 	max-width: 100% !important;	
