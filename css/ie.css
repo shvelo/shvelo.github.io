@@ -120,3 +120,15 @@ h1.title {
 label span {
 	display: none;
 }
+
+a, a:visited {
+	-pie-transition-duration: .5s;
+}
+
+.social .links {
+	-pie-transition-duration: .5s;
+}
+
+.social .links:hover {
+	-pie-box-shadow: 0 0 1em white;
+}
