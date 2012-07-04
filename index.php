@@ -36,14 +36,12 @@ $about = file_get_contents("about.html");
 		<div class="social">
 			<div class="links">
 				<ul>
-					<li><a target="_blank" class="facebook" href="<?php echo $data->social->facebook->url?>" title="<?php echo $data->social->facebook->title?>">f</a>
-					<li><a target="_blank" class="twitter" href="//www.twitter.com/shvelo96" title="@shvelo96 on Twitter">t</a>
-					<li><a target="_blank" class="gplus" href="//www.nicksh.com/plus" title="Nick Shvelidze on Google+">g+</a>
-					<li><a target="_blank" class="linkedin" href="//www.linkedin.com/in/shvelo" title="Nick Shvelidze on LinkedIn">Li</a>
-					<li><a target="_blank" class="tumblr" href="//nicksh.tumblr.com/" title="Nicksh on Tumblr">tu</a>
+				    <?php foreach($data->social as $social):?>
+				    <li><a target="_blank" class="<?php echo $social->name;?>" href="<?php echo $social->url;?>" title="<?php echo $social->title;?>"><?php echo $social->content;?></a>
+				    <?php endforeach; ?>
 				</ul>
 			</div>
-		</div>	
+		</div>
 	</div>
 </header>
 

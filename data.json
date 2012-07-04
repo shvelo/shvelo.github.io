@@ -2,27 +2,53 @@
 	"title": "Nick Shvelidze",
 	"description": "Web Developer in Tbilisi, Georgia. Technologies: PHP, Javascript, HTML5/CSS3",
 	"fb_image": "http://www.nicksh.com/img/fb.jpg",
-	"social": {
-				"facebook": {
-					"url": "//www.facebook.com/shvelo96",
-					"title": "Nika Shvelidze on Facebook"
-				}
-	},
-	"works": [{
-		"title": "Mobywash.ge",
-		"url": "//mobywash.ge",
-		"image": "img/works/mobywash-o.png",
-		"description": "Mobile car wash<br>Codeigniter, Booking"
-	},{
-		"title": "Magazine.ge",
-		"url": "//magazine.ge",
-		"image": "img/works/magazine-o.png",
-		"description": "Georgian internet magazine<br>Codeigniter, Bootstrap"
-	}],
-	"experiments": [{
-		"title": "jQuery Desktop",
-		"url": "//shvelo.github.com/experiments/desktop/",
-		"image": "img/experiments/desktop-o.png",
-		"description": "Desktop in HTML<br>jQuery"
-	}]
+	"social": [
+		{
+			"name": "facebook",
+			"url": "//fb.me/shvelo96",
+			"title": "Nika Shvelidze on Facebook",
+			"content": "f"
+		}, {
+			"name": "twitter",
+			"url": "//twitter.com/shvelo96",
+			"title": "@shvelo96 on Twitter",
+			"content": "t"
+		}, {
+			"name": "gplus",
+			"url": "//nicksh.com/plus",
+			"title": "Nick Shvelidze on Google+",
+			"content": "g+"
+		}, {
+			"name": "linkedin",
+			"url": "//linkedin.com/in/shvelo",
+			"title": "Nick Shvelidze on LinkedIn",
+			"content": "Li"
+		}, {
+			"name": "tumblr",
+			"url": "//nicksh.tumblr.com/",
+			"title": "Nicksh on Tumblr",
+			"content": "tu"
+		}
+	],
+	"works": [
+		{
+			"title": "Mobywash.ge",
+			"url": "//mobywash.ge",
+			"image": "img/works/mobywash-o.png",
+			"description": "Mobile car wash<br>Codeigniter, Booking"
+		}, {
+			"title": "Magazine.ge",
+			"url": "//magazine.ge",
+			"image": "img/works/magazine-o.png",
+			"description": "Georgian internet magazine<br>Codeigniter, Bootstrap"
+		}
+	],
+	"experiments": [
+		{
+			"title": "jQuery Desktop",
+			"url": "//shvelo.github.com/experiments/desktop/",
+			"image": "img/experiments/desktop-o.png",
+			"description": "Desktop in HTML<br>jQuery"
+		}
+	]
 }
