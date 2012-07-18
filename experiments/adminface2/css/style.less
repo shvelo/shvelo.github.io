@@ -1,0 +1,386 @@
+@import "functions.less";
+@import "colors.less";
+
+@header_height: 75px;
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: @overlay_bg;
+  display: none;
+}
+
+.preview {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 99;
+  margin-top: -150px;
+  margin-left: -250px;
+  display: none;
+}
+
+.preview.cam {
+  width: 700px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -350px;
+}
+
+.preview.doc {
+  min-height: 300px;
+  height: auto;
+  background: white;
+}
+
+.preview.doc header {
+  line-height: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.preview.doc article {
+  padding-left: 10px;
+}
+
+body > header {
+  height: @header_height;
+  background: @dark_bg;
+  color: white;
+  position: relative;
+  z-index: 3;
+}
+
+.nav {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: @header_height;
+}
+
+.nav li {
+  float: left;
+  height: 100%;
+}
+
+.nav a {
+  line-height: @header_height;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  .transition-duration(.5s);
+}
+
+.nav a:hover {
+  background: #434343;
+}
+
+.title {
+  color: white;
+  text-decoration: none;
+  font-size: 3em;
+  line-height: @header_height;
+  margin-left: .5em;
+}
+
+.sidebar {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: @dark_bg;
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: @header_height 0 0 0;
+  list-style: none;
+}
+
+.sidebar a, .sidebar a:visited {
+  display: block;
+  width: 100%;
+  height: 75px;
+  color: white;
+  text-align: center;
+  line-height: 75px;
+  font-size: 32px;
+  text-decoration: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+  .transition-duration(.5s);
+}
+
+.sidebar a:hover, .sidebar a.active {
+  background-color: #454545;
+}
+
+.sidebar [href="#stats"] {
+  background-image: url(../img/stats.png);
+}
+
+.sidebar [href="#stats"]:hover, .sidebar [href="#stats"].active {
+  background-color: @stats_color;
+}
+
+.sidebar [href="#add"] {
+  background: url(../img/add.png) no-repeat center center;
+}
+
+.sidebar [href="#add"]:hover, .sidebar [href="#add"].active {
+  background-color: @add_color;
+}
+
+.sidebar [href="#posts"] {
+  background-image: url(../img/document.png);
+}
+
+.sidebar [href="#posts"]:hover, .sidebar [href="#posts"].active {
+  background-color: @posts_color;
+}
+
+.sidebar [href="#media"] {
+  background-image: url(../img/video.png);
+}
+
+.sidebar [href="#media"]:hover, .sidebar [href="#media"].active {
+  background-color: @media_color;
+}
+
+.sidebar [href="#settings"] {
+  background-image: url(../img/list.png);
+}
+
+.sidebar [href="#settings"]:hover, .sidebar [href="#settings"].active {
+  background-color: @settings_color;
+}
+
+.sidebar-expand {
+  position: absolute;
+  left: 75px;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: #353535;
+  color: white;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 2;
+  .transition-duration(.5s);
+}
+
+.sidebar-expand.expand {
+  width: 400px;
+}
+
+.sidebar-expand header {
+  height: 75px;
+  line-height: 50px;
+  margin-top: @header_height;
+  font-size: 2em;
+  text-align: center;
+}
+
+.wrapper {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0; 
+  left: 0;
+}
+
+.content {
+  margin-left: 75px;
+  margin-top: @header_height;
+}
+
+.content > ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.content li.tab {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.content li.tab.active {
+  display: block;
+}
+
+.content header {
+  color: #2d2d2d;
+  border-bottom: 1px solid #2d2d2d;
+  font-size: 40px;
+  padding-left: 15px;
+  line-height: 74px;
+}
+
+#stats header {
+  color: @stats_color;
+  border-color: @stats_color;
+}
+
+#posts header {
+  color: @posts_color;
+  border-color: @posts_color;
+}
+
+#media header {
+  color: @media_color;
+  border-color: @media_color;
+}
+
+#settings header {
+  color: @settings_color;
+  border-color: @settings_color;
+}
+
+#add header {
+  color: @add_color;
+  border-color: @add_color;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list .item {
+  height: 50px;
+  cursor: pointer;
+}
+
+.list .item .icon {
+  width: 50px;
+  height: 50px;
+  float: left;
+  background-color: @icon_bg;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../img/document.png);
+  .transition-duration(.5s);
+  color: white;
+  overflow: hidden;
+  font-size: 10px;
+  text-align: center;
+}
+
+.list .item:hover .icon {
+  background-color: lighten(@icon_bg, 10%);
+}
+
+.list .item .icon .thumbnail {
+  width: 50px;
+  height: 50px;
+  opacity: .8;
+}
+
+.list .item .label {
+  line-height: 50px;
+  height: 50px;
+  margin-left: 10px;
+  float: left;
+}
+
+.list .item .actions {
+  height: 50px;
+  float: right;
+}
+
+.list .item .actions div {
+  height: 50px;
+  width: 50px;
+  float: left;
+  background: @icon_bg  no-repeat center center;
+  .transition-duration(.5s);
+}
+
+.list .item .actions div:hover {
+    background-color: lighten(@icon_bg, 10%);
+}
+
+.list .item .actions .pre {
+  background-image: url(../img/tabs.png);
+}
+
+.list .item .actions .edt {
+  background-image: url(../img/list.png);
+}
+
+.list .item .actions .rem {
+  background-image: url(../img/delete.png);
+}
+
+.list .item .c {
+  display: none;
+}
+
+.list .item.vid .icon {
+  background-image: url(../img/video.png);
+}
+
+.list .item.mon .icon {
+  background-image: url(../img/monitor.png);
+}
+
+.list .item.mus .icon {
+  background-image: url(../img/music.png);
+}
+
+.list .item.cam .icon {
+  background-image: url(../img/camera.png);
+}
+
+.list .item.doc .icon {
+  background-image: url(../img/document.png);
+}
+
+.list .item.set .icon {
+  background-image: url(../img/on.png);
+}
+
+.list .item.set.off .icon {
+  background-image: url(../img/off.png);
+}
+
+.chart-container {
+  margin: 10px;
+  padding: 10px;
+}
+
+.chart-container .label {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.chart-container .chart {
+  height: 200px;
+}
