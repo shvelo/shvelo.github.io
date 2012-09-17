@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Adminface</title>
+<meta name="description" content="">
+<meta name="author" content="Nick Shvelidze">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="stylesheet" href="css/style.css">
+
+<div class="overlay"></div>
+<div class="preview"></div>
+
+<header>
+    <a class="title" href>Adminface</a>
+    <ul class="nav">
+        <li><a href="login.html">Logout</a>
+    </ul>
+</header>
+
+<div class="sidebar">
+    <ul>
+        <li><a href="#video" data-tab="video" class="video active" title="Video"></a>
+        <li><a href="#monitor" data-tab="monitor" class="monitor" title="Monitor"></a>
+        <li><a href="#document" data-tab="document" class="document" title="Document"></a>
+        <li><a href="#music" data-tab="music" class="music" title="Music"></a>
+        <li><a href="#camera" data-tab="camera" class="camera" title="Camera"></a>
+        <li><a href="#settings" data-tab="settings" class="settings" title="Settings"></a>
+        <li><a class="add" title="Add"></a>
+    </ul>
+</div>
+
+<div class="sidebar-expand">
+    <header>Add New</header>
+</div>
+
+<div class="wrapper">
+    <div class="content">
+        <ul>
+            <li data-tab="video" class="tab active">
+                <header>Video</header>
+                <ul class="list">
+                    <li class="item vid" data-video="30230507">
+                        <div class="icon"></div>
+                        <div class="label">Possieure</div>
+                        <div class="actions">
+                            <div class="pre"></div>
+                            <div class="edt"></div>
+                        </div>
+                    </li>
+                    <li class="item vid" data-video="30402976">
+                        <div class="icon"></div>
+                        <div class="label">Adventures of Tintin</div>
+                    </li>
+                </ul>
+            </li>
+            <li data-tab="monitor" class="tab">
+                <header>Monitor</header>
+                <ul class="list">
+                    <li class="item mon">
+                        <div class="icon"></div>
+                        <div class="label">Monitor 1</div>
+                    </li>
+                </ul>
+            </li>
+            <li data-tab="document" class="tab">
+                <header>Document</header>
+                <ul class="list">
+                    <li class="item doc" data-doc="content/doc1.json">
+                        <div class="icon"></div>
+                        <div class="label">Document</div>
+                    </li>
+                </ul>
+            </li>
+            <li data-tab="music" class="tab">
+                <header>Music</header>
+                <ul class="list">
+                    <li class="item mus" data-music="PFdhf8">
+                        <div class="icon"></div>
+                        <div class="label">Music</div>
+                    </li>
+                </ul>
+            </li>
+            <li data-tab="camera" class="tab">
+                <header>Camera</header>
+                <ul class="list">
+                    <li class="item cam" data-picture="http://b.vimeocdn.com/ts/203/023/203023619_640.jpg">
+                        <div class="icon"></div>
+                        <div class="label">Possieure</div>
+                    </li>
+                </ul>
+            </li>
+            <li data-tab="settings" class="tab">
+                <header>Settings</header>
+                <ul class="list">
+                    <li class="item set off">
+                        <div class="icon"></div>
+                        <div class="label">Setting 1</div>
+                    </li>
+                    <li class="item set">
+                        <div class="icon"></div>
+                        <div class="label">Setting 2</div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/adminface.js"></script>

@@ -5,29 +5,29 @@
 	"social": [
 		{
 			"name": "facebook",
-			"url": "//fb.me/shvelo96",
+			"url": "https://www.facebook.com/shvelo96",
 			"title": "Nika Shvelidze on Facebook",
-			"content": "f"
+			"content": "<i class=icon-facebook></i>"
 		}, {
 			"name": "twitter",
-			"url": "//twitter.com/shvelo96",
+			"url": "https://twitter.com/shvelo96",
 			"title": "@shvelo96 on Twitter",
-			"content": "t"
+			"content": "<i class=icon-twitter></i>"
 		}, {
 			"name": "gplus",
-			"url": "//nicksh.com/plus",
+			"url": "http://nicksh.com/plus",
 			"title": "Nick Shvelidze on Google+",
-			"content": "g+"
+			"content": "<i class=icon-google-plus></i>"
 		}, {
 			"name": "linkedin",
-			"url": "//linkedin.com/in/shvelo",
+			"url": "https://www.linkedin.com/in/shvelo",
 			"title": "Nick Shvelidze on LinkedIn",
-			"content": "Li"
+			"content": "<i class=icon-linkedin></i>"
 		}, {
-			"name": "tumblr",
-			"url": "//nicksh.tumblr.com/",
-			"title": "Nicksh on Tumblr",
-			"content": "tu"
+			"name": "github",
+			"url": "https://github.com/shvelo",
+			"title": "Shvelo on GitHub",
+			"content": "<i class=icon-github></i>"
 		}
 	],
 	"works": [
@@ -41,6 +41,11 @@
 			"url": "//magazine.ge",
 			"image": "img/works/magazine-o.png",
 			"description": "Georgian internet magazine<br>Codeigniter, Bootstrap"
+		}, {
+			"title": "Resume Template",
+			"url": "/resume-template",
+			"image": "img/works/resume-template.png",
+			"description": "Free Resume template<br>HTML5, Responsive"
 		}
 	],
 	"experiments": [
@@ -49,6 +54,12 @@
 			"url": "//shvelo.github.com/experiments/desktop/",
 			"image": "img/experiments/desktop-o.png",
 			"description": "Desktop in HTML<br>jQuery"
+		},
+		{
+			"title": "HTML5 Usage",
+			"url": "/img/infographic.jpg",
+			"image": "img/experiments/infographic-o.png",
+			"description": "Infographic"
 		}
 	]
 }
