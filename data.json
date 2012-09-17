@@ -41,11 +41,6 @@
 			"url": "//magazine.ge",
 			"image": "img/works/magazine-o.png",
 			"description": "Georgian internet magazine<br>Codeigniter, Bootstrap"
-		}, {
-			"title": "Resume Template",
-			"url": "/resume-template",
-			"image": "img/works/resume-template.png",
-			"description": "Free Resume template<br>HTML5, Responsive"
 		}
 	],
 	"experiments": [
