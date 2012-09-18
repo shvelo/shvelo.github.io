@@ -1,7 +1,5 @@
 var exec = require('child_process').exec;
 
-var JQUERY_VERSION = "1.8.1";
-
 desc('Build the project.');
 task('default', ['css','js']);
 
@@ -12,11 +10,16 @@ task('css', [], function(params) {
 
 desc('Concatenate JS');
 task('js', [], function(params) {
-    exec('cat js/jquery-'+JQUERY_VERSION+'.min.js >js/all.js');
+    exec('cat js/jquery-latest.min.js >js/all.js');
 	exec('cat js/jquery.scrollTo.js >>js/all.js');
 	exec('cat js/jquery.localscroll.js >>js/all.js');
 	exec('cat js/custom.js >>js/all.js');
 	exec('cat js/analytics.js >>js/all.js');
+});
+
+desc('Update jQuery');
+task('update-jquery', [], function(params) {
+    exec('wget http://code.jquery.com/jquery-latest.min.js -0 js/jquery-latest.min.js');
 });
 
 desc('Remove generated files');
