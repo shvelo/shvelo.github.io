@@ -1,0 +1,12 @@
+{
+  "name":          "nicksh.com",
+  "version":       "1.0.0",
+  "author":        "Nick Shvelidze <shveloo@gmail.com>",
+  "description":   "My personal site",
+  "license":       "CC",
+  "preferGlobal":  "true",
+  "dependencies": {
+    "less": "*",
+    "jake": "*"
+  }
+}
