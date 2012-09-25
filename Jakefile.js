@@ -19,7 +19,7 @@ task('js', [], function(params) {
 
 desc('Update jQuery');
 task('update-jquery', [], function(params) {
-    exec('wget http://code.jquery.com/jquery-latest.min.js -0 js/jquery-latest.min.js');
+    exec('wget http://code.jquery.com/jquery-latest.min.js -O js/jquery-latest.min.js');
 });
 
 desc('Remove generated files');
