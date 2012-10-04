@@ -56,6 +56,12 @@
 			"description": "Desktop in HTML<br>jQuery"
 		},
 		{
+			"title": "CSS3 Animation",
+			"url": "//shvelo.github.com/experiments/css3-animation/",
+			"image": "img/experiments/css3-animation.png",
+			"description": "CSS3 Animation demo<br>CSS3"
+		},
+		{
 			"title": "HTML5 Usage",
 			"url": "/img/infographic.jpg",
 			"image": "img/experiments/infographic-o.png",
