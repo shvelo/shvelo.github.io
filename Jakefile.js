@@ -9,13 +9,9 @@ task('css', [], function(params) {
 });
 
 desc('Concatenate JS');
-task('js', [], function(params) {
+task('js', ['update-jquery'], function(params) {
   exec('cat js/jquery-latest.min.js >js/all.js');
   exec('echo "\n" >>js/all.js');
-	exec('cat js/jquery.scrollTo.js >>js/all.js');
-	exec('echo "\n" >>js/all.js');
-	exec('cat js/jquery.localscroll.js >>js/all.js');
-	exec('echo "\n" >>js/all.js');
 	exec('cat js/custom.js >>js/all.js');
 	exec('echo "\n" >>js/all.js');
 	exec('cat js/analytics.js >>js/all.js');
@@ -27,7 +23,7 @@ task('update-jquery', [], function(params) {
 });
 
 desc('Remove generated files');
-task('clean', [], function(params) {
+task('clobber', [], function(params) {
     exec('rm css/style.css');
     exec('rm js/all.js');
 });
