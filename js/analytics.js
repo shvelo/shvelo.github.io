@@ -1,3 +1,5 @@
+/* Analytics */
+
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-31149000-1']);
 _gaq.push(['_setDomainName', 'nicksh.com']);

@@ -10,10 +10,14 @@ task('css', [], function(params) {
 
 desc('Concatenate JS');
 task('js', [], function(params) {
-    exec('cat js/jquery-latest.min.js >js/all.js');
+  exec('cat js/jquery-latest.min.js >js/all.js');
+  exec('echo "\n" >>js/all.js');
 	exec('cat js/jquery.scrollTo.js >>js/all.js');
+	exec('echo "\n" >>js/all.js');
 	exec('cat js/jquery.localscroll.js >>js/all.js');
+	exec('echo "\n" >>js/all.js');
 	exec('cat js/custom.js >>js/all.js');
+	exec('echo "\n" >>js/all.js');
 	exec('cat js/analytics.js >>js/all.js');
 });
 
