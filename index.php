@@ -22,7 +22,6 @@ $about = file_get_contents("about.html");
 <body>
 <nav class="main">
 	<ul>
-		<li><a href="#top">Top</a>
 		<li><a href="#about">About</a>
 		<li><a href="#works">Works</a>
 		<li><a href="#experiments">Experiments</a>
