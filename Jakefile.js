@@ -11,12 +11,25 @@ desc("Generate HTML");
 task('html', [], function(params){
   try {
     console.log('Generating HTML');
+
     var jsondata = JSON.parse(fs.readFileSync('data.json','utf8'));
+
+    console.log('Generating index.html');
+
     fs.openSync('index.html', "w");
     mu2.compileAndRender('index.mustache', jsondata).on('data', function (data) {
       fs.appendFileSync('index.html', data);
     }).on('end', function() {
-      console.log('HTML generated');
+      console.log('index.html generated');
+    });
+
+    console.log('Generating resume/index.html');
+
+    fs.openSync('resume/index.html', "w");
+    mu2.compileAndRender('resume/index.mustache', jsondata).on('data', function (data) {
+      fs.appendFileSync('resume/index.html', data);
+    }).on('end', function() {
+      console.log('resume/index.html generated');
     });
   } catch(e) {
     console.error(e.message);
