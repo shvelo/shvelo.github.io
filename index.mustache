@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>{{{title}}}</title>
+<meta name="description" content="{{{description}}}">
+<meta property="og:image" content="{{{fb_image}}}">
+<meta property="og:type" content="website">
+<meta property="og:description" content="{{{description}}}">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<!--[if lt IE9]>
+<script>document.location = "/resume"</script>
+<![endif]-->
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+<nav class="main">
+	<ul>
+		<li><a href="#about">About</a>
+		<li><a href="#works">Works</a>
+		<li><a href="#experiments">Experiments</a>
+		<li><a href="http://blog.nicksh.com" target="_blank">Blog</a>
+	</ul>
+</nav>
+
+<header id="top">
+	<div class="middle">
+		<h1 class="name"><a href="//nicksh.com">Nick Shvelidze</a></h1>
+		<div class="social">
+			<div class="links">
+				<ul>
+				    {{#social}}
+				    <li><a target="_blank" class="{{{name}}}" href="{{{url}}}" title="{{{title}}}">{{{content}}}</a>
+				    {{/social}}
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+<nav class="mobile show-on-mobile">
+	<ul>
+		<li><a href="#about">About</a>
+		<li><a href="#works">Works</a>
+		<li><a href="#experiments">Experiments</a>
+		<li><a href="http://blog.nicksh.com" target="_blank">Blog</a>
+	</ul>
+</nav>
+
+<div id="about" class="page">
+	<h1 class="title">About Me</h1>
+	<article>
+		{{> about.html}}
+	</article>
+</div>
+
+<div id="works" class="page">
+	<h1 class="title">My Works</h1>
+	<div class="grid">
+		{{#works}}
+		<div class="tile">			
+			<div class="thumb" style="background-image: url('{{{image}}}')">
+				<div class="over">
+					<div class="text">
+						<h3><a href="<?php echo $item->url?>" title="{{{title}}}" target="_blank">{{{title}}}</a></h3>
+						<p>{{{description}}}
+					</div>
+				</div>
+			</div>
+		</div>
+		{{/works}}
+	</div>
+</div>
+
+<div id="experiments" class="page">
+	<h1 class="title">My Experiments</h1>
+	<div class="grid">
+		{{#experiments}}
+		<div class="tile">			
+			<div class="thumb" style="background-image: url('{{{image}}}')">
+				<div class="over">
+					<div class="text">
+						<h3><a href="<?php echo $item->url?>" title="{{{title}}}" target="_blank">{{{title}}}</a></h3>
+						<p>{{{description}}}
+					</div>
+				</div>
+			</div>
+		</div>
+		{{/experiments}}
+	</div>
+</div>
+
+<a class="top show-on-mobile" href="#top">Back to top</a>
+
+<script src="js/all.js"></script>
+</body>
