@@ -774,11 +774,19 @@ a:active {
 h1.name {
   margin-top: 0;
   font-size: 800%;
+  line-height: 1;
   margin-bottom: 0;
 }
 h1.name a {
   color: white;
   text-decoration: none;
+}
+.intro {
+  color: #E0E0E0;
+  font-size: 6em;
+  line-height: 1;
+  margin-bottom: 10px;
+  display: block;
 }
 .social {
   text-align: center;

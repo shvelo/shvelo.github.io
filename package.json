@@ -4,11 +4,10 @@
   "author":        "Nick Shvelidze <shveloo@gmail.com>",
   "description":   "My personal site",
   "license":       "CC",
-  "preferGlobal":  "true",
   "dependencies": {
     "less": "*",
     "jake": "*",
-	"request": "*",
-	"mu2": "*"
+		"request": "*",
+		"mu2": "*"
   }
 }
