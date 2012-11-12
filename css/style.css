@@ -1051,7 +1051,7 @@ nav.main a:hover {
 *	Mobile
 * ---------------------------------------------------------------
 **/
-@media (max-width: 515px) {
+@media (max-width: 768px) {
   * {
     max-width: 100% !important;
   }
@@ -1123,6 +1123,10 @@ nav.main a:hover {
     height: auto;
     width: 100%;
     font-size: 300%;
+  }
+  .intro {
+    margin-top: .1em;
+    font-size: 2.5em;
   }
   #about article {
     padding: 0 0.5em 0 0.5em;
