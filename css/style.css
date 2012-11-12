@@ -1,6 +1,6 @@
 /**
 * ---------------------------------------------------------------
-*	Font Awesome
+*	Fonts
 * ---------------------------------------------------------------
 **/
 /*  Font Awesome
@@ -718,6 +718,10 @@ li[class*=" icon-"].icon-large:before {
 .icon-user-md:before {
   content: "\f200";
 }
+@font-face {
+  font-family: 'Afta Sans';
+  src: url('AftaSansThin-Regular.otf');
+}
 /**
 * ---------------------------------------------------------------
 *	Standard
@@ -736,7 +740,7 @@ li[class*=" icon-"].icon-large:before {
 }
 body,
 html {
-  font-family: arial;
+  font-family: 'Afta Sans', sans-serif;
   padding: 0;
   margin: 0;
   width: 100%;
