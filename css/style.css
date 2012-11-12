@@ -718,10 +718,6 @@ li[class*=" icon-"].icon-large:before {
 .icon-user-md:before {
   content: "\f200";
 }
-@font-face {
-  font-family: 'Caviar Dreams';
-  src: url('CaviarDreams.ttf');
-}
 /**
 * ---------------------------------------------------------------
 *	Standard
@@ -740,7 +736,7 @@ li[class*=" icon-"].icon-large:before {
 }
 body,
 html {
-  font-family: 'Caviar Dreams', sans-serif;
+  font-family: sans-serif;
   padding: 0;
   margin: 0;
   width: 100%;
