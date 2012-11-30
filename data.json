@@ -1,7 +1,7 @@
 {
 	"title": "Nick Shvelidze",
 	"description": "I create websites with ❤",
-	"fb_image": "http://www.nicksh.com/img/photo.jpg",
+	"fb_image": "http://nicksh.nicksh.netdna-cdn.com/img/photo.jpg",
 	"social": [
 		{
 			"name": "facebook",
@@ -34,17 +34,17 @@
 		{
 			"title": "Mobywash.ge",
 			"url": "http://mobywash.ge",
-			"image": "img/works/mobywash-o.png",
+			"image": "http://nicksh.nicksh.netdna-cdn.com/img/works/mobywash-o.png",
 			"description": "Mobile car wash<br>Codeigniter, Booking"
 		}, {
 			"title": "Magazine.ge",
 			"url": "http://magazine.ge",
-			"image": "img/works/magazine-o.png",
+			"image": "http://nicksh.nicksh.netdna-cdn.com/img/works/magazine-o.png",
 			"description": "Georgian internet magazine<br>Codeigniter, Bootstrap"
 		}, {
 			"title": "Resume Template",
 			"url": "/resume-template",
-			"image": "img/works/resume-template.png",
+			"image": "http://nicksh.nicksh.netdna-cdn.com/img/works/resume-template.png",
 			"description": "Free Resume template<br>HTML5, Responsive"
 		}
 	],
@@ -52,19 +52,19 @@
 		{
 			"title": "jQuery Desktop",
 			"url": "http://shvelo.github.com/experiments/desktop/",
-			"image": "img/experiments/desktop-o.png",
+			"image": "http://nicksh.nicksh.netdna-cdn.com/img/experiments/desktop-o.png",
 			"description": "Desktop in HTML<br>jQuery"
 		},
 		{
 			"title": "CSS3 Animation",
 			"url": "http://shvelo.github.com/experiments/css3-animation/",
-			"image": "img/experiments/css3-animation.png",
+			"image": "http://nicksh.nicksh.netdna-cdn.com/img/experiments/css3-animation.png",
 			"description": "CSS3 Animation demo<br>CSS3"
 		},
 		{
 			"title": "HTML5 Usage",
 			"url": "/img/infographic.jpg",
-			"image": "img/experiments/infographic-o.png",
+			"image": "http://nicksh.nicksh.netdna-cdn.com/img/experiments/infographic-o.png",
 			"description": "Infographic"
 		}
 	]
