@@ -1,7 +1,7 @@
 /* Custom JS */
 
-$(function(){
+(function(){
   if('ontouchstart' in window){
-    $('body').addClass('touch');
+    document.body.className = "touch";
   }
-});
+})();

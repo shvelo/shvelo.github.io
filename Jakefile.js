@@ -16,18 +16,18 @@ task('html', [], function(params){
 
     console.log('Generating index.html');
 
-    fs.openSync('index.html', "w");
+    var indexFile = fs.createWriteStream('index.html', {'flags': 'w'});
     mu2.compileAndRender('index.mustache', jsondata).on('data', function (data) {
-      fs.appendFileSync('index.html', data);
+      indexFile.write(data);
     }).on('end', function() {
       console.log('index.html generated');
     });
 
     console.log('Generating resume/index.html');
 
-    fs.openSync('resume/index.html', "w");
+    var resumeFile = fs.createWriteStream('resume/index.html', {'flags': 'w'});
     mu2.compileAndRender('resume/index.mustache', jsondata).on('data', function (data) {
-      fs.appendFileSync('resume/index.html', data);
+      resumeFile.write(data);
     }).on('end', function() {
       console.log('resume/index.html generated');
     });
@@ -58,9 +58,9 @@ task('js', [], function(params) {
     console.log('Compiling scripts');
 
     var scripts = [];
-    scripts[0] = fs.readFileSync('js/jquery.js');
-    scripts[1] = fs.readFileSync('js/custom.js');
-    scripts[2] = fs.readFileSync('js/analytics.js');
+    //scripts.unshift(fs.readFileSync('js/jquery.js'));
+    scripts.unshift(fs.readFileSync('js/custom.js'));
+    scripts.unshift(fs.readFileSync('js/analytics.js'));
 
     fs.writeFileSync('js/all.js', scripts.join("\n\n"));
 
