@@ -12,6 +12,7 @@ task "Compile Haml to Html"
 task "html" do |t|
 	template = File.read "index.haml"
 	engine = Haml::Engine.new(template)
+	require "./haml_helpers.rb"
 	File.open("index.html", 'w') do |f|
 		f.write engine.render
 	end
