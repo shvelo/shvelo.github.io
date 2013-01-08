@@ -1,12 +1,13 @@
 require "haml"
 require "sass"
+require "rainbow"
 
 desc "Compile site"
 task "default" => ["html", "css"]
 
 task "Compile Haml to Html"
 task "html" do |t|
-	puts "Compiling Haml to Html"
+	puts "Compiling Haml to Html".color(:green).bright
 	template = File.read "index.haml"
 	engine = Haml::Engine.new template
 	require "./haml_helpers.rb"
@@ -17,23 +18,23 @@ end
 
 desc "Compile Sass to Css"
 task "css" do |t|
-	puts "Compilling Sass to Css"
+	puts "Compilling Sass to Css".color(:green).bright
 	system "compass compile"
 end
 
 task "watch" => ["html"] do |t|
-	puts "Watching Sass code for changes"
+	puts "Watching Sass code for changes".color(:green).bright
 	system "compass watch"
 end
 
 # Only for me
 desc "Desploy site"
 task "deploy" do |t|
-	puts "Comitting changes"
+	puts "Comitting changes".color(:green).bright
 	system "git add ."
 	system "git commit -a -m 'Update'"
-	puts "Pushing to origin"
+	puts "Pushing to origin".color(:green).bright
 	system "git push --all origin"
-	puts "Pushing to GitHub"
+	puts "Pushing to GitHub".color(:green).bright
 	system "git push --all github"
 end
