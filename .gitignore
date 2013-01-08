@@ -1,3 +1,4 @@
 .project
 node_modules
 visualize
+Gemfile.lock
