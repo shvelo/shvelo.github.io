@@ -1,5 +1,6 @@
 @import 'compass';
 @import 'compass/reset';
+@import 'compass/css3';
 
 body {
 	background: #F8F8F8;
@@ -18,11 +19,18 @@ body {
 
 			img {
 				width: 100%;
+				cursor: pointer;
+				@include filter(grayscale(100%));
+				@include transition(.3s);
+				&:hover {
+					@include filter(none);
+				}
 			}
 		}
 
 		.right {
 			display: inline-block;
+			text-align: left;
 
 			h1 {
 				font-size: 3em;

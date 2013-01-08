@@ -63,33 +63,48 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 4, ../sass/style.scss */
+/* line 5, ../sass/style.scss */
 body {
   background: #F8F8F8;
   color: #3d3d3d;
   font-family: serif;
 }
-/* line 9, ../sass/style.scss */
+/* line 10, ../sass/style.scss */
 body article {
   margin: 1em;
   text-align: center;
 }
-/* line 13, ../sass/style.scss */
+/* line 14, ../sass/style.scss */
 body article .left {
   display: inline-block;
   vertical-align: top;
   width: 12em;
   margin-right: 1em;
 }
-/* line 19, ../sass/style.scss */
+/* line 20, ../sass/style.scss */
 body article .left img {
   width: 100%;
+  cursor: pointer;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
-/* line 24, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
+body article .left img:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+}
+/* line 31, ../sass/style.scss */
 body article .right {
   display: inline-block;
+  text-align: left;
 }
-/* line 27, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 body article .right h1 {
   font-size: 3em;
   line-height: 1;
