@@ -1,5 +1,6 @@
 # [Nicksh.com](http://nicksh.com)
 
-Compiling:   
-      bundle install
-      rake
+Compiling:  
+
+    $ bundle install  
+    $ rake
