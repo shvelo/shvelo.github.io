@@ -33,8 +33,6 @@ task "deploy", [:message] do |t, args|
 		message = "Update"
 	end
 
-	puts message
-
 	system "git add ."
 	system "git commit -a -m '#{message}'"
 
