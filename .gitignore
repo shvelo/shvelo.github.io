@@ -2,4 +2,4 @@
 node_modules
 visualize
 Gemfile.lock
-.sass_cache
+.sass-cache
