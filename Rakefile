@@ -8,16 +8,7 @@ task "default" => ["html", "css"]
 task "Compile Haml to Html"
 task "html" do |t|
 	puts "Compiling Haml to Html".color(:green).bright
-	compile_html
-end
-
-def compile_html
-	template = File.read "index.haml"
-	engine = Haml::Engine.new template
-	require "./haml_helpers.rb"
-	File.open("index.html", 'w') do |f|
-		f.write engine.render
-	end
+	system "haml index.haml index.html"
 end
 
 desc "Compile Sass to Css"
@@ -26,24 +17,9 @@ task "css" do |t|
 	system "compass compile"
 end
 
-task "watch" => ["html"] do |t|
+task "watch" => ["html", "css"] do |t|
 	puts "Watching Sass & Haml code for changes".color(:green).bright
-	Thread.new do 
-		system "compass watch"
-	end
-	Thread.new do
-		md5sum = `md5sum index.haml`
-		while true
-			md5sum_new = `md5sum index.haml`
-			if md5sum != md5sum_new
-				puts "Haml changed, compilling".color(:green).bright
-				compile_html
-			else
-				sleep 0.5
-			end
-			md5sum = md5sum_new
-		end
-	end
+	system "bundle exec guard -i"
 end
 
 # Only for me
