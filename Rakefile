@@ -4,6 +4,10 @@ require "sass"
 desc "Compile site"
 task "default" => ["html", "css"]
 
+task "watch" => ["html"] do |t|
+	system "sass --watch sass:css"
+end
+
 task "Compile Haml to Html"
 task "html" do |t|
 	template = File.read "index.haml"
