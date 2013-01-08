@@ -33,8 +33,10 @@ task "deploy" do |t|
 	puts "Comitting changes".color(:green).bright
 	system "git add ."
 	system "git commit -a -m 'Update'"
-	puts "Pushing to origin".color(:green).bright
-	system "git push --all origin"
-	puts "Pushing to GitHub".color(:green).bright
-	system "git push --all github"
+
+	remotes = `git remote`.split
+	remotes.each do |remote|
+		puts "Pushing to #{remote}".color(:green).bright
+		system "git push --all #{remote}"
+	end
 end
