@@ -24,10 +24,17 @@ end
 
 # Only for me
 desc "Desploy site"
-task "deploy" do |t|
+task "deploy", [:message] do |t, args|
 	puts "Comitting changes".color(:green).bright
+
+	if args.message
+		message = args.message
+	else
+		message = "Update"
+	end
+
 	system "git add ."
-	system "git commit -a -m 'Update'"
+	system "git commit -a -m '#{message}'"
 
 	remotes = `git remote`.split
 	remotes.each do |remote|
