@@ -4,14 +4,10 @@ require "sass"
 desc "Compile site"
 task "default" => ["html", "css"]
 
-task "watch" => ["html"] do |t|
-	system "sass --watch sass:css"
-end
-
 task "Compile Haml to Html"
 task "html" do |t|
 	template = File.read "index.haml"
-	engine = Haml::Engine.new(template)
+	engine = Haml::Engine.new template
 	require "./haml_helpers.rb"
 	File.open("index.html", 'w') do |f|
 		f.write engine.render
@@ -20,11 +16,11 @@ end
 
 desc "Compile Sass to Css"
 task "css" do |t|
-	template = File.read "sass/style.sass"
-	engine = Sass::Engine.new(template)
-	File.open("css/style.css", 'w') do |f|
-		f.write engine.render
-	end
+	system "compass compile"
+end
+
+task "watch" => ["html"] do |t|
+	system "compass watch"
 end
 
 # Only for me
