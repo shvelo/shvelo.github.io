@@ -1,17 +1,23 @@
 !!! 5
-%html
-	%head
-		%meta{ "charset" => "UTF-8" }
 
-		%title Nick Shvelidze
-		%meta{ "name" => "description", "content" => "I create websites with ❤" }
+%head
+	=meta_charset "UTF-8"
 
-		%meta{ "name" => "viewport", "content" => "width=device-width,initial-scale=1" }
-		%link{ "rel" => "stylesheet", "href" => "css/style.css" }
-		%link{ "rel" => "shortcut icon", "href" => "favicon.png" }
+	%title Nick Shvelidze
+	=meta_description "I create websites with ❤"
 
-		=if_ie do
-			%script
-				document.location = "/resume"
+	=meta_viewport
+	=stylesheet "css/style.css"
+	=favicon "favicon.png"
 
-	%body
+	=if_ie do
+		%script
+			document.location = "/resume";
+
+%body
+	
+	%article
+		.left
+			%img{ "src" => "img/photo.jpg", "alt" => "me" }
+		.right
+			%h1 Nick Shvelidze
