@@ -3,6 +3,6 @@
 
 guard :compass, :input => "sass", :output => "css"
 
-guard 'haml' do
-  watch(/^.+(\.haml)/)
+guard 'slim', :slim => { :pretty => true } do
+  watch(%r'^.+\.slim$')
 end

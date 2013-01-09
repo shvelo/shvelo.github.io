@@ -7,10 +7,11 @@ gem "sass"
 gem "css_parser"
 gem "compass"
 
-gem "haml"
+gem "slim"
+gem "wdm"
 
 gem "guard"
-gem "guard-haml"
+gem "guard-slim"
 gem "guard-compass"
 gem 'rb-inotify', :require => false
 gem 'rb-fsevent', :require => false

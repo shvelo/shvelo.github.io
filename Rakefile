@@ -5,10 +5,10 @@ require "rainbow"
 desc "Compile site"
 task "default" => ["html", "css"]
 
-task "Compile Haml to Html"
+task "Compile Slim to Html"
 task "html" do |t|
-	puts "Compiling Haml to Html".color(:green).bright
-	system "haml index.haml index.html"
+	puts "Compiling Slim to Html".color(:green).bright
+	system "bundle exec slimrb -p index.slim index.html"
 end
 
 desc "Compile Sass to Css"
@@ -18,7 +18,7 @@ task "css" do |t|
 end
 
 task "watch" => ["html", "css"] do |t|
-	puts "Watching Sass & Haml code for changes".color(:green).bright
+	puts "Watching Sass & Slim code for changes".color(:green).bright
 	system "bundle exec guard -i"
 end
 
