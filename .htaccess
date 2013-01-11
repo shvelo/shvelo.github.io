@@ -28,3 +28,9 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 # Make sure proxies don't deliver the wrong content
 Header append Vary User-Agent env=!dont-vary
 </IfModule>
+
+<FilesMatch "\.(ttf|otf|eot)$">
+<IfModule mod_headers.c>
+Header set Access-Control-Allow-Origin "*"
+</IfModule>
+</FilesMatch>
