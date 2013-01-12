@@ -1,6 +1,7 @@
 source "http://rubygems.org"
 
 gem "rake"
+gem "webrick"
 gem "rainbow"
 
 gem "sass"

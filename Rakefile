@@ -1,6 +1,7 @@
 require "haml"
 require "sass"
 require "rainbow"
+require "webrick"
 
 desc "Compile site"
 task "default" => ["html", "css"]
@@ -19,7 +20,15 @@ end
 
 task "watch" => ["html", "css"] do |t|
 	puts "Watching Sass & Slim code for changes".color(:green).bright
-	system "bundle exec guard -i"
+	exec "bundle exec guard"
+end
+
+task "server" do |t|
+	include WEBrick
+	puts "Starting server: http://localhost:3000"
+	server = HTTPServer.new(:Port=>3000,:DocumentRoot=>Dir::pwd )
+	trap("INT"){ server.shutdown }
+	server.start
 end
 
 # Only for me
