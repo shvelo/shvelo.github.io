@@ -20,7 +20,7 @@ end
 
 task "watch" => ["html", "css"] do |t|
 	puts "Watching Sass & Slim code for changes".color(:green).bright
-	exec "bundle exec guard"
+	exec "bundle exec guard -i"
 end
 
 task "server" do |t|

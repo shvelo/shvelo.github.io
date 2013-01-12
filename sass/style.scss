@@ -1,11 +1,12 @@
 @import 'compass';
 @import 'compass/reset';
 @import 'compass/css3';
+@import 'http://fonts.googleapis.com/css?family=Open+Sans';
 
 body {
 	background: #F8F8F8;
 	color: #3d3d3d;
-	font-family: serif;
+	font-family: 'Open Sans', sans-serif;
 
 	article {
 		margin: 1em;
@@ -21,7 +22,7 @@ body {
 				width: 100%;
 				cursor: pointer;
 				@include filter(grayscale(100%));
-				@include transition(.3s);
+				@include transition(ease-in-out .3s);
 				&:hover {
 					@include filter(none);
 				}
@@ -33,10 +34,14 @@ body {
 			text-align: left;
 
 			h1 {
-				font-size: 3em;
+				font-size: 4em;
 				line-height: 1;
-				margin-top: 0;
-				margin-bottom: .2em;
+			}
+
+			h2 {
+				font-size: 2em;
+				line-height: 1;
+				color: #9B9B9B;
 			}
 		}
 	}
