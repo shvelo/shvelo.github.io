@@ -1,5 +1,3 @@
-require "haml"
-require "sass"
 require "rainbow"
 require "webrick"
 

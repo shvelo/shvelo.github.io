@@ -9,7 +9,6 @@ gem "css_parser"
 gem "compass"
 
 gem "slim"
-gem "wdm"
 
 gem "guard"
 gem "guard-slim"
