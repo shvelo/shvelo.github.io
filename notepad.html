@@ -13,10 +13,10 @@
 <script>
 var init = function() {
   if(!'localStorage' in window) {
-    document.title = "Notepad";
+    document.title = "Notepad (saving disabled)";
     return false;
   }
-  document.title = "Persistent Notepad";
+  document.title = "Notepad (saving enabled)";
   var content = localStorage['content'];
   if(content) {
     document.body.innerHTML = content;
