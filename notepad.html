@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notepad</title>
+<style>
+  body {
+    padding: 1em;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    color: #2d2d2d;
+  }
+</style>
+<script>
+var init = function() {
+  if(!'localStorage' in window) {
+    document.title = "Notepad";
+    return false;
+  }
+  document.title = "Persistent Notepad";
+  var content = localStorage['content'];
+  if(content) {
+    document.body.innerHTML = content;
+  }
+  
+  document.body.onkeyup = function(){
+    localStorage['content'] = document.body.innerHTML;
+  }
+}
+</script>
+</head>
+<body contenteditable onload="init();">
+</body>
+</html>
