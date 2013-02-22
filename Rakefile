@@ -7,7 +7,7 @@ task "default" => ["html", "css"]
 task "Compile Slim to Html"
 task "html" do |t|
 	puts "Compiling Slim to Html".color(:green).bright
-	system "bundle exec slimrb -p index.slim index.html"
+	system "bundle exec slimrb -l -p index.slim index.html"
 end
 
 desc "Compile Sass to Css"
