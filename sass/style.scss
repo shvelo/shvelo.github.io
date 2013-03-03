@@ -37,7 +37,8 @@ body {
 			h1 {
 				font-size: 4em;
 				line-height: 1;
-				@media(max-width: 6cm) {
+				
+				@media(max-width: 480px) {
 				  font-size: 3em;
 				}
 			}

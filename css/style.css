@@ -1715,23 +1715,23 @@ body article .right h1 {
   font-size: 4em;
   line-height: 1;
 }
-@media (max-width: 6cm) {
+@media (max-width: 480px) {
   /* line 37, ../sass/style.scss */
   body article .right h1 {
     font-size: 3em;
   }
 }
-/* line 45, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 body article .right h2 {
   font-size: 2em;
   line-height: 1;
   color: #9B9B9B;
 }
-/* line 51, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 body article .right .social {
   margin-top: .5em;
 }
-/* line 54, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 body article .right .social a {
   margin-right: .2em;
   color: #555;
@@ -1740,7 +1740,7 @@ body article .right .social a {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-/* line 59, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 body article .right .social a:hover {
   color: #2d2d2d;
 }
