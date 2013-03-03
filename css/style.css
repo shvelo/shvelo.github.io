@@ -1713,6 +1713,7 @@ body article .right {
 /* line 37, ../sass/style.scss */
 body article .right h1 {
   font-size: 4em;
+  margin-top: .07em;
   line-height: 1;
 }
 @media (max-width: 480px) {
@@ -1721,18 +1722,18 @@ body article .right h1 {
     font-size: 3em;
   }
 }
-/* line 46, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 body article .right h2 {
   font-size: 2em;
   line-height: 1;
-  margin-top: .1em;
+  margin-top: .2em;
   color: #9B9B9B;
 }
-/* line 53, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 body article .right .social {
   margin-top: .6em;
 }
-/* line 56, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 body article .right .social a {
   margin-right: .2em;
   color: #555;
@@ -1741,7 +1742,7 @@ body article .right .social a {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-/* line 61, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 body article .right .social a:hover {
   color: #2d2d2d;
 }
