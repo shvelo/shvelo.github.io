@@ -1725,13 +1725,14 @@ body article .right h1 {
 body article .right h2 {
   font-size: 2em;
   line-height: 1;
+  margin-top: .1em;
   color: #9B9B9B;
 }
-/* line 52, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 body article .right .social {
-  margin-top: .5em;
+  margin-top: .6em;
 }
-/* line 55, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 body article .right .social a {
   margin-right: .2em;
   color: #555;
@@ -1740,7 +1741,7 @@ body article .right .social a {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-/* line 60, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 body article .right .social a:hover {
   color: #2d2d2d;
 }
