@@ -1746,3 +1746,23 @@ body article .right .social a {
 body article .right .social a:hover {
   color: #2d2d2d;
 }
+/* line 65, ../sass/style.scss */
+body article .right .social a:hover.icon-github-sign {
+  color: #4183c4;
+}
+/* line 68, ../sass/style.scss */
+body article .right .social a:hover.icon-google-plus-sign {
+  color: #db4a39;
+}
+/* line 71, ../sass/style.scss */
+body article .right .social a:hover.icon-twitter-sign {
+  color: #00a0d1;
+}
+/* line 74, ../sass/style.scss */
+body article .right .social a:hover.icon-linkedin-sign {
+  color: #0e76a8;
+}
+/* line 77, ../sass/style.scss */
+body article .right .social a:hover.icon-facebook-sign {
+  color: #3b5998;
+}

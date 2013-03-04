@@ -1,7 +1,7 @@
 @import 'compass';
 @import 'compass/reset';
 @import 'compass/css3';
-@import 'font-awesome.scss';
+@import 'font-awesome';
 @import 'http://fonts.googleapis.com/css?family=Open+Sans';
 
 body {
@@ -61,6 +61,22 @@ body {
 			    
 			    &:hover {
 			      color: #2d2d2d;
+			      
+			      &.icon-github-sign {
+			        color: #4183c4;
+			      }
+			      &.icon-google-plus-sign {
+			        color: #db4a39;
+			      }
+			      &.icon-twitter-sign {
+			        color: #00a0d1;
+			      }
+			      &.icon-linkedin-sign {
+			        color: #0e76a8;
+			      }
+			      &.icon-facebook-sign {
+			        color: #3b5998;
+			      }
 			    }
 			  }
 			}
