@@ -29,6 +29,21 @@ task "server" do |t|
 	server.start
 end
 
+task "preview" => ["html", "css"] do |t|
+	Thread.new do
+		puts "Watching Sass & Slim code for changes".color(:green).bright
+		system "bundle exec guard -i"
+	end
+
+	Thread.new do
+		include WEBrick
+		puts "Starting server: http://localhost:3000"
+		server = HTTPServer.new(:Port=>3000,:DocumentRoot=>Dir::pwd )
+		trap("INT"){ server.shutdown }
+		server.start
+	end
+end
+
 # Only for me
 desc "Desploy site"
 task "deploy", [:message] do |t, args|
