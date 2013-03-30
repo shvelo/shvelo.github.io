@@ -31,18 +31,21 @@ end
 
 task "preview" => ["html", "css"] do |t|
 	threads = []
-	threads.push Thread.new do
+
+	thr1 = Thread.new do
 		puts "Watching Sass & Slim code for changes".color(:green).bright
 		system "bundle exec guard -i"
 	end
-
-	threads.push Thread.new do
+	threads.push thr1
+	
+	thr2 = Thread.new do
 		include WEBrick
 		puts "Starting server: http://localhost:3000"
 		server = HTTPServer.new(:Port=>3000,:DocumentRoot=>Dir::pwd )
 		trap("INT"){ server.shutdown }
 		server.start
 	end
+	threads.push thr2
 	
 	threads.each do |thread|
 		thread.join
