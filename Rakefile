@@ -33,7 +33,7 @@ task "preview" => ["html", "css"] do |t|
 	Thread.new do
 		puts "Watching Sass & Slim code for changes".color(:green).bright
 		system "bundle exec guard -i"
-	end
+	end.join
 
 	Thread.new do
 		include WEBrick
@@ -41,7 +41,7 @@ task "preview" => ["html", "css"] do |t|
 		server = HTTPServer.new(:Port=>3000,:DocumentRoot=>Dir::pwd )
 		trap("INT"){ server.shutdown }
 		server.start
-	end
+	end.join
 end
 
 # Only for me
