@@ -3,3 +3,4 @@ node_modules
 visualize
 Gemfile.lock
 .sass-cache
+.DS_Store
