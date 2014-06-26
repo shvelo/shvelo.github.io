@@ -21,54 +21,14 @@ task "watch" => ["html", "css"] do |t|
 	exec "bundle exec guard -i"
 end
 
-task "server" do |t|
+def start_server port = 9009
 	include WEBrick
-	puts "Starting server: http://localhost:3000"
-	server = HTTPServer.new(:Port=>3000,:DocumentRoot=>Dir::pwd )
+	puts "Starting server: http://localhost:#{port}"
+	server = HTTPServer.new(:Port=>port, :DocumentRoot=>File.dirname(__FILE__) )
 	trap("INT"){ server.shutdown }
 	server.start
 end
 
-task "preview" => ["html", "css"] do |t|
-	threads = []
-
-	thr1 = Thread.new do
-		puts Rainbow("Watching Sass & Slim code for changes").color(:green).bright
-		system "bundle exec guard -i"
-	end
-	threads.push thr1
-	
-	thr2 = Thread.new do
-		include WEBrick
-		puts "Starting server: http://localhost:3000"
-		server = HTTPServer.new(:Port=>3000,:DocumentRoot=>Dir::pwd )
-		trap("INT"){ server.shutdown }
-		server.start
-	end
-	threads.push thr2
-	
-	threads.each do |thread|
-		thread.join
-	end
-end
-
-# Only for me
-desc "Desploy site"
-task "deploy", [:message] do |t, args|
-	puts Rainbow("Comitting changes").color(:green).bright
-
-	if args.message
-		message = args.message
-	else
-		message = "Update"
-	end
-
-	system "git add ."
-	system "git commit -a -m '#{message}'"
-
-	remotes = `git remote`.split
-	remotes.each do |remote|
-		puts Rainbow("Pushing to #{remote}").color(:green).bright
-		system "git push --all #{remote}"
-	end
+task "server" do |t|
+	start_server
 end
