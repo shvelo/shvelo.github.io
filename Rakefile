@@ -6,18 +6,18 @@ task "default" => ["html", "css"]
 
 task "Compile Slim to Html"
 task "html" do |t|
-	puts "Compiling Slim to Html".color(:green).bright
+	puts Rainbow("Compiling Slim to Html").color(:green).bright
 	system "bundle exec slimrb -l -p index.slim index.html"
 end
 
 desc "Compile Sass to Css"
 task "css" do |t|
-	puts "Compilling Sass to Css".color(:green).bright
+	puts Rainbow("Compilling Sass to Css").color(:green).bright
 	system "compass compile"
 end
 
 task "watch" => ["html", "css"] do |t|
-	puts "Watching Sass & Slim code for changes".color(:green).bright
+	puts Rainbow("Watching Sass & Slim code for changes").color(:green).bright
 	exec "bundle exec guard -i"
 end
 
@@ -33,7 +33,7 @@ task "preview" => ["html", "css"] do |t|
 	threads = []
 
 	thr1 = Thread.new do
-		puts "Watching Sass & Slim code for changes".color(:green).bright
+		puts Rainbow("Watching Sass & Slim code for changes").color(:green).bright
 		system "bundle exec guard -i"
 	end
 	threads.push thr1
@@ -55,7 +55,7 @@ end
 # Only for me
 desc "Desploy site"
 task "deploy", [:message] do |t, args|
-	puts "Comitting changes".color(:green).bright
+	puts Rainbow("Comitting changes").color(:green).bright
 
 	if args.message
 		message = args.message
@@ -68,7 +68,7 @@ task "deploy", [:message] do |t, args|
 
 	remotes = `git remote`.split
 	remotes.each do |remote|
-		puts "Pushing to #{remote}".color(:green).bright
+		puts Rainbow("Pushing to #{remote}").color(:green).bright
 		system "git push --all #{remote}"
 	end
 end
