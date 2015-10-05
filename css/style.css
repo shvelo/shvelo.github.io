@@ -1,5 +1,5 @@
-@import 'http://fonts.googleapis.com/css?family=Open+Sans';
-/* line 17, ../../../.gem/ruby/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+@import "http://fonts.googleapis.com/css?family=Open+Sans";
+/* line 5, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,46 +21,46 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../.gem/ruby/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../.gem/ruby/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../.gem/ruby/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../.gem/ruby/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../.gem/ruby/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../.gem/ruby/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../.gem/ruby/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../.gem/ruby/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+/* line 116, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
@@ -93,10 +93,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: normal;
   font-style: normal;
 }
-
 /*  Font Awesome styles
     ------------------------------------------------------- */
-/* line 43, ../sass/_font-awesome.scss */
+/* line 42, ../sass/_font-awesome.scss */
 [class^="icon-"],
 [class*=" icon-"] {
   font-family: FontAwesome;
@@ -117,7 +116,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* more sprites.less reset */
-/* line 75, ../sass/_font-awesome.scss */
+/* line 63, ../sass/_font-awesome.scss */
 .icon-white,
 .nav-pills > .active > a > [class^="icon-"],
 .nav-pills > .active > a > [class*=" icon-"],
@@ -134,7 +133,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-image: none;
 }
 
-/* line 80, ../sass/_font-awesome.scss */
+/* line 79, ../sass/_font-awesome.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   text-decoration: inherit;
@@ -143,7 +142,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* makes sure icons active on rollover in links */
-/* line 89, ../sass/_font-awesome.scss */
+/* line 88, ../sass/_font-awesome.scss */
 a [class^="icon-"],
 a [class*=" icon-"] {
   display: inline-block;
@@ -156,7 +155,7 @@ a [class*=" icon-"] {
   font-size: 1.3333333333333333em;
 }
 
-/* line 102, ../sass/_font-awesome.scss */
+/* line 101, ../sass/_font-awesome.scss */
 .btn [class^="icon-"],
 .btn [class*=" icon-"], .nav [class^="icon-"],
 .nav [class*=" icon-"] {
@@ -176,7 +175,7 @@ a [class*=" icon-"] {
   display: inline-block;
 }
 
-/* line 112, ../sass/_font-awesome.scss */
+/* line 111, ../sass/_font-awesome.scss */
 .nav-tabs [class^="icon-"],
 .nav-tabs [class*=" icon-"], .nav-pills [class^="icon-"],
 .nav-pills [class*=" icon-"] {
@@ -191,7 +190,7 @@ a [class*=" icon-"] {
   line-height: .9em;
 }
 
-/* line 120, ../sass/_font-awesome.scss */
+/* line 119, ../sass/_font-awesome.scss */
 li [class^="icon-"],
 li [class*=" icon-"], .nav li [class^="icon-"],
 .nav li [class*=" icon-"] {
@@ -212,7 +211,7 @@ ul.icons {
   list-style-type: none;
   text-indent: -.75em;
 }
-/* line 137, ../sass/_font-awesome.scss */
+/* line 136, ../sass/_font-awesome.scss */
 ul.icons li [class^="icon-"],
 ul.icons li [class*=" icon-"] {
   width: .75em;
@@ -220,12 +219,12 @@ ul.icons li [class*=" icon-"] {
 
 /* line 143, ../sass/_font-awesome.scss */
 .icon-muted {
-  color: #eeeeee;
+  color: #eee;
 }
 
 /* line 150, ../sass/_font-awesome.scss */
 .icon-border {
-  border: solid 1px #eeeeee;
+  border: solid 1px #eee;
   padding: .2em .25em .15em;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -308,7 +307,7 @@ ul.icons li [class*=" icon-"] {
   margin-top: .25em;
 }
 
-/* line 219, ../sass/_font-awesome.scss */
+/* line 218, ../sass/_font-awesome.scss */
 .btn.btn-large [class^="icon-"],
 .btn.btn-large [class*=" icon-"] {
   margin-top: 0;
@@ -340,65 +339,45 @@ ul.icons li [class*=" icon-"] {
 }
 
 @-moz-keyframes spin {
-  /* line 239, ../sass/_font-awesome.scss */
   0% {
     -moz-transform: rotate(0deg);
   }
-
-  /* line 240, ../sass/_font-awesome.scss */
   100% {
     -moz-transform: rotate(359deg);
   }
 }
-
 @-webkit-keyframes spin {
-  /* line 243, ../sass/_font-awesome.scss */
   0% {
     -webkit-transform: rotate(0deg);
   }
-
-  /* line 244, ../sass/_font-awesome.scss */
   100% {
     -webkit-transform: rotate(359deg);
   }
 }
-
 @-o-keyframes spin {
-  /* line 247, ../sass/_font-awesome.scss */
   0% {
     -o-transform: rotate(0deg);
   }
-
-  /* line 248, ../sass/_font-awesome.scss */
   100% {
     -o-transform: rotate(359deg);
   }
 }
-
 @-ms-keyframes spin {
-  /* line 251, ../sass/_font-awesome.scss */
   0% {
     -ms-transform: rotate(0deg);
   }
-
-  /* line 252, ../sass/_font-awesome.scss */
   100% {
     -ms-transform: rotate(359deg);
   }
 }
-
 @keyframes spin {
-  /* line 255, ../sass/_font-awesome.scss */
   0% {
     transform: rotate(0deg);
   }
-
-  /* line 256, ../sass/_font-awesome.scss */
   100% {
     transform: rotate(359deg);
   }
 }
-
 @-moz-document url-prefix() {
   /* line 260, ../sass/_font-awesome.scss */
   .icon-spin {
@@ -420,7 +399,6 @@ ul.icons li [class*=" icon-"] {
     height: .75em;
   }
 }
-
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
 /* line 268, ../sass/_font-awesome.scss */
@@ -1692,17 +1670,15 @@ body article .left img {
   width: 100%;
   cursor: pointer;
   -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
   filter: grayscale(100%);
-  -webkit-transition: ease-in-out 0.3s;
   -moz-transition: ease-in-out 0.3s;
   -o-transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
 /* line 27, ../sass/style.scss */
 body article .left img:hover {
   -webkit-filter: none;
-  -moz-filter: none;
   filter: none;
 }
 /* line 33, ../sass/style.scss */
@@ -1737,32 +1713,38 @@ body article .right .social {
 body article .right .social a {
   margin-right: .2em;
   color: #555;
-  -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-/* line 62, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
+body article .right .social a span {
+  text-indent: -10000px;
+  display: inline-block;
+  position: absolute;
+}
+/* line 69, ../sass/style.scss */
 body article .right .social a:hover {
   color: #2d2d2d;
 }
-/* line 65, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 body article .right .social a:hover.icon-github-sign {
   color: #4183c4;
 }
-/* line 68, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 body article .right .social a:hover.icon-google-plus-sign {
   color: #db4a39;
 }
-/* line 71, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 body article .right .social a:hover.icon-twitter-sign {
   color: #00a0d1;
 }
-/* line 74, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 body article .right .social a:hover.icon-linkedin-sign {
   color: #0e76a8;
 }
-/* line 77, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 body article .right .social a:hover.icon-facebook-sign {
   color: #3b5998;
 }

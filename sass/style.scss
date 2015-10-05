@@ -38,7 +38,7 @@ body {
 				font-size: 4em;
 				margin-top: .07em;
 				line-height: 1;
-				
+
 				@media(max-width: 480px) {
 				  font-size: 3em;
 				}
@@ -50,18 +50,25 @@ body {
 				margin-top: .2em;
 				color: #9B9B9B;
 			}
-			
+
 			.social {
 			  margin-top: .6em;
-			  
+
 			  a {
 			    margin-right: .2em;
 			    color: #555;
+
+					span {
+						text-indent: -10000px;
+						display: inline-block;
+						position: absolute;
+					}
+
 			    @include transition(.5s);
-			    
+
 			    &:hover {
 			      color: #2d2d2d;
-			      
+
 			      &.icon-github-sign {
 			        color: #4183c4;
 			      }

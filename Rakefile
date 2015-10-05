@@ -2,13 +2,7 @@ require "rainbow"
 require "webrick"
 
 desc "Compile site"
-task "default" => ["html", "css"]
-
-task "Compile Slim to Html"
-task "html" do |t|
-	puts Rainbow("Compiling Slim to Html").color(:green).bright
-	system "bundle exec slimrb -l -p index.slim index.html"
-end
+task "default" => ["css"]
 
 desc "Compile Sass to Css"
 task "css" do |t|
@@ -16,8 +10,8 @@ task "css" do |t|
 	system "compass compile"
 end
 
-task "watch" => ["html", "css"] do |t|
-	puts Rainbow("Watching Sass & Slim code for changes").color(:green).bright
+task "watch" => ["css"] do |t|
+	puts Rainbow("Watching Sass code for changes").color(:green).bright
 	exec "bundle exec guard -i"
 end
 
