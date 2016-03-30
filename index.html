@@ -43,9 +43,13 @@
     </ul>
   </section>
   <script type="text/html" id="repo-tpl">
-    <a href="<%this.html_url%>" class="name"><%this.name%></a>
-    <span class="stars"><i class="fa fa-star"></i> <%this.stargazers_count%></span>
-    <span class="forks"><i class="fa fa-code-fork"></i> <%this.forks%></span>
+    <header>
+      <a href="<%this.html_url%>" class="name"><%this.name%> <small><%this.language%></small></a>
+      <span class="spacer"></span>
+      <span class="stars"><i class="fa fa-star"></i> <%this.stargazers_count%></span>
+      <span class="forks"><i class="fa fa-code-fork"></i> <%this.forks%></span>
+    </header>
+    <p><%this.description%></p>
   </script>
   <script src="js/template.js"></script>
   <script src="js/index.js"></script>

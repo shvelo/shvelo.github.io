@@ -3527,3 +3527,54 @@ body section .right .social a.fa-linkedin-square {
 body section .right .social a.fa-facebook-official {
   color: #3b5998;
 }
+/* line 98, ../sass/style.scss */
+body section ul.repos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+/* line 105, ../sass/style.scss */
+body section ul.repos li {
+  flex: 1 1 20%;
+  padding: 1em;
+  color: white;
+  background: #455A64;
+  margin: .3em;
+}
+/* line 112, ../sass/style.scss */
+body section ul.repos li header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+/* line 117, ../sass/style.scss */
+body section ul.repos li header .spacer {
+  flex: 10;
+}
+/* line 121, ../sass/style.scss */
+body section ul.repos li header a.name {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 126, ../sass/style.scss */
+body section ul.repos li header a.name small {
+  color: #ccc;
+  font-size: smaller;
+  margin-left: .2em;
+}
+/* line 133, ../sass/style.scss */
+body section ul.repos li header span {
+  padding: 0 .2em;
+}
+/* line 136, ../sass/style.scss */
+body section ul.repos li header span.stars {
+  color: #FFB300;
+}
+/* line 145, ../sass/style.scss */
+body section ul.repos li p {
+  text-align: left;
+  padding-top: .5em;
+}

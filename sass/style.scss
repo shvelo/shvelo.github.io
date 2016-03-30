@@ -94,5 +94,59 @@ body {
         }
       }
     }
+
+    ul.repos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: stretch;
+
+      li {
+        flex: 1 1 20%;
+        padding: 1em;
+        color: white;
+        background: #455A64;
+        margin: .3em;
+
+        header {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+
+          .spacer {
+            flex: 10;
+          }
+
+          a.name {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+
+            small {
+              color: #ccc;
+              font-size: smaller;
+              margin-left: .2em;
+            }
+          }
+
+          span {
+            padding: 0 .2em;
+
+            &.stars {
+              color: #FFB300;
+            }
+
+            &.forks {
+            }
+          }
+        }
+
+        p {
+          text-align: left;
+          padding-top: .5em;
+        }
+      }
+    }
   }
 }
