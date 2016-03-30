@@ -20,19 +20,19 @@
         I code awesome stuff, 'nuff said
       </h2>
       <div class="social">
-        <a class="icon-github-sign icon-4x" href="https://github.com/shvelo">
+        <a class="fa fa-github-square fa-4x" href="https://github.com/shvelo" target="_blank">
           <span>Github</span>
         </a>
-        <a class="icon-google-plus-sign icon-4x" href="https://plus.google.com/+NickShvelidze">
+        <a class="fa fa-google-plus-square fa-4x" href="https://plus.google.com/+NickShvelidze" target="_blank">
           <span>Google+</span>
         </a>
-        <a class="icon-twitter-sign icon-4x" href="https://twitter.com/libgrog">
+        <a class="fa fa-twitter-square fa-4x" href="https://twitter.com/libgrog" target="_blank">
           <span>Twitter</span>
         </a>
-        <a class="icon-linkedin-sign icon-4x" href="https://linkedin.com/in/shvelo">
+        <a class="fa fa-linkedin-square fa-4x" href="https://linkedin.com/in/shvelo" target="_blank">
           <span>Linkedin</span>
         </a>
-        <a class="icon-facebook-sign icon-4x" href="https://facebook.com/pirrate.me">
+        <a class="fa fa-facebook-official fa-4x" href="https://facebook.com/pirrate.me" target="_blank">
           <span>Facebook</span>
         </a>
       </div>
@@ -43,7 +43,9 @@
     </ul>
   </section>
   <script type="text/html" id="repo-tpl">
-    <a href="<%this.url%>"><%this.name%></a>
+    <a href="<%this.html_url%>" class="name"><%this.name%></a>
+    <span class="stars"><i class="fa fa-star"></i> <%this.stargazers_count%></span>
+    <span class="forks"><i class="fa fa-code-fork"></i> <%this.forks%></span>
   </script>
   <script src="js/template.js"></script>
   <script src="js/index.js"></script>

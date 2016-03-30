@@ -24,12 +24,10 @@ body {
         width: 100%;
         cursor: pointer;
 
-        @include filter(grayscale(100%));
-
         @include transition(ease-in-out 0.3s);
 
         &:hover {
-          @include filter(none);
+          @include filter(brightness(1.1));
         }
       }
     }
@@ -61,6 +59,12 @@ body {
         a {
           margin-right: .2em;
           color: #555;
+          text-decoration: none;
+          @include transition(.5s);
+
+          &:hover {
+            @include filter(brightness(1.5));
+          }
 
           span {
             text-indent: -10000px;
@@ -68,30 +72,24 @@ body {
             position: absolute;
           }
 
-          @include transition(0.5s);
+          &.fa-github-square {
+            color: #4183c4;
+          }
 
-          &:hover {
-            color: #2d2d2d;
+          &.fa-google-plus-square {
+            color: #db4a39;
+          }
 
-            &.icon-github-sign {
-              color: #4183c4;
-            }
+          &.fa-twitter-square {
+            color: #00a0d1;
+          }
 
-            &.icon-google-plus-sign {
-              color: #db4a39;
-            }
+          &.fa-linkedin-square {
+            color: #0e76a8;
+          }
 
-            &.icon-twitter-sign {
-              color: #00a0d1;
-            }
-
-            &.icon-linkedin-sign {
-              color: #0e76a8;
-            }
-
-            &.icon-facebook-sign {
-              color: #3b5998;
-            }
+          &.fa-facebook-official {
+            color: #3b5998;
           }
         }
       }
