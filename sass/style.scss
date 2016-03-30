@@ -95,19 +95,21 @@ body {
       }
     }
 
-    ul.repos {
+    &.repos {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: stretch;
+      text-align: left;
 
-      li {
+      .repo {
         flex: 1 1 20%;
         padding: 1em;
         color: white;
         background: #455A64;
         margin: .3em;
+        text-decoration: none;
 
         header {
           display: flex;
@@ -118,10 +120,11 @@ body {
             flex: 10;
           }
 
-          a.name {
+          .name {
             color: white;
             text-decoration: none;
             font-weight: bold;
+            padding: 0;
 
             small {
               color: #ccc;
@@ -134,10 +137,12 @@ body {
             padding: 0 .2em;
 
             &.stars {
+              text-align: center;
               color: #FFB300;
             }
 
             &.forks {
+              text-align: center;
             }
           }
         }

@@ -7,8 +7,10 @@ fetch("https://api.github.com/search/repositories?q=user:shvelo&sort=stars").the
   return result.items;
 }).then(function(repos) {
   repos.forEach(function(repo){
-    console.log(repo);
-    var repoElem = document.createElement('li');
+    var repoElem = document.createElement('a');
+    repoElem.className = "repo";
+    repoElem.href = repo.html_url;
+    repoElem.target = "_blank";
     repoElem.innerHTML = TemplateEngine(repoTpl, repo);
     repoList.appendChild(repoElem);
   });
