@@ -23,8 +23,7 @@ body {
       img {
         width: 100%;
         cursor: pointer;
-
-        @include transition(ease-in-out 0.3s);
+        transition: ease-in-out 0.3s;
 
         &:hover {
           @include filter(brightness(1.1));
@@ -60,7 +59,7 @@ body {
           margin-right: .2em;
           color: #555;
           text-decoration: none;
-          @include transition(.5s);
+          transition: .5s;
 
           &:hover {
             @include filter(brightness(1.5));
@@ -110,6 +109,11 @@ body {
         background: #455A64;
         margin: .3em;
         text-decoration: none;
+        transition: .4s;
+
+        &:hover {
+          background: #607D8B;
+        }
 
         header {
           display: flex;

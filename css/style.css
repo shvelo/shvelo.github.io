@@ -3448,86 +3448,80 @@ body section .left {
 body section .left img {
   width: 100%;
   cursor: pointer;
-  -moz-transition: ease-in-out 0.3s;
-  -o-transition: ease-in-out 0.3s;
-  -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
-/* line 29, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 body section .left img:hover {
   -webkit-filter: brightness(1.1);
   filter: brightness(1.1);
 }
-/* line 35, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 body section .right {
   display: inline-block;
   text-align: left;
 }
-/* line 39, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 body section .right h1 {
   font-size: 4em;
   margin-top: .07em;
   line-height: 1;
 }
 @media (max-width: 480px) {
-  /* line 39, ../sass/style.scss */
+  /* line 38, ../sass/style.scss */
   body section .right h1 {
     font-size: 3em;
   }
 }
-/* line 49, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 body section .right h2 {
   font-size: 2em;
   line-height: 1;
   margin-top: .2em;
   color: #9B9B9B;
 }
-/* line 56, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 body section .right .social {
   margin-top: .6em;
 }
-/* line 59, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 body section .right .social a {
   margin-right: .2em;
   color: #555;
   text-decoration: none;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  transition: .5s;
 }
-/* line 65, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 body section .right .social a:hover {
   -webkit-filter: brightness(1.5);
   filter: brightness(1.5);
 }
-/* line 69, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 body section .right .social a span {
   text-indent: -10000px;
   display: inline-block;
   position: absolute;
 }
-/* line 75, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 body section .right .social a.fa-github-square {
   color: #4183c4;
 }
-/* line 79, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 body section .right .social a.fa-google-plus-square {
   color: #db4a39;
 }
-/* line 83, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 body section .right .social a.fa-twitter-square {
   color: #00a0d1;
 }
-/* line 87, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 body section .right .social a.fa-linkedin-square {
   color: #0e76a8;
 }
-/* line 91, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 body section .right .social a.fa-facebook-official {
   color: #3b5998;
 }
-/* line 98, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 body section.repos {
   display: flex;
   flex-direction: row;
@@ -3536,7 +3530,7 @@ body section.repos {
   align-items: stretch;
   text-align: left;
 }
-/* line 106, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 body section.repos .repo {
   flex: 1 1 20%;
   padding: 1em;
@@ -3544,44 +3538,49 @@ body section.repos .repo {
   background: #455A64;
   margin: .3em;
   text-decoration: none;
+  transition: .4s;
 }
 /* line 114, ../sass/style.scss */
+body section.repos .repo:hover {
+  background: #607D8B;
+}
+/* line 118, ../sass/style.scss */
 body section.repos .repo header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
-/* line 119, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 body section.repos .repo header .spacer {
   flex: 10;
 }
-/* line 123, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 body section.repos .repo header .name {
   color: white;
   text-decoration: none;
   font-weight: bold;
   padding: 0;
 }
-/* line 129, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 body section.repos .repo header .name small {
   color: #ccc;
   font-size: smaller;
   margin-left: .2em;
 }
-/* line 136, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 body section.repos .repo header span {
   padding: 0 .2em;
 }
-/* line 139, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 body section.repos .repo header span.stars {
   text-align: center;
   color: #FFB300;
 }
-/* line 144, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 body section.repos .repo header span.forks {
   text-align: center;
 }
-/* line 150, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 body section.repos .repo p {
   text-align: left;
   padding-top: .5em;
