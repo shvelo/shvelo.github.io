@@ -8,7 +8,7 @@
   <link href="img/pirate.png" rel="shortcut icon" />
 </head>
 <body>
-  <article>
+  <section>
     <div class="left">
       <img alt="me" src="img/pirate.png" />
     </div>
@@ -37,5 +37,14 @@
         </a>
       </div>
     </div>
-  </article>
+  </section>
+  <section>
+    <ul class="repos" id="repos">
+    </ul>
+  </section>
+  <script type="text/html" id="repo-tpl">
+    <a href="<%this.url%>"><%this.name%></a>
+  </script>
+  <script src="js/template.js"></script>
+  <script src="js/index.js"></script>
 </body>

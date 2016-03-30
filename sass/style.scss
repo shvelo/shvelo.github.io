@@ -1,92 +1,100 @@
-@import 'compass';
-@import 'compass/reset';
-@import 'compass/css3';
-@import '_font-awesome';
-@import 'http://fonts.googleapis.com/css?family=Open+Sans';
+@import "compass";
+@import "compass/reset";
+@import "compass/css3";
+@import "_font-awesome";
+
+@import "http://fonts.googleapis.com/css?family=Open+Sans";
 
 body {
-	background: #F8F8F8;
-	color: #3d3d3d;
-	font-family: 'Open Sans', sans-serif;
+  background: #F8F8F8;
+  color: #3d3d3d;
+  font-family: 'Open Sans', sans-serif;
 
-	article {
-		margin: 1em;
-		text-align: center;
+  section {
+    margin: 1em;
+    text-align: center;
 
-		.left {
-			display: inline-block;
-			vertical-align: top;
-			width: 12em;
-			margin-right: 1em;
+    .left {
+      display: inline-block;
+      vertical-align: top;
+      width: 12em;
+      margin-right: 1em;
 
-			img {
-				width: 100%;
-				cursor: pointer;
-				@include filter(grayscale(100%));
-				@include transition(ease-in-out .3s);
-				&:hover {
-					@include filter(none);
-				}
-			}
-		}
+      img {
+        width: 100%;
+        cursor: pointer;
 
-		.right {
-			display: inline-block;
-			text-align: left;
+        @include filter(grayscale(100%));
 
-			h1 {
-				font-size: 4em;
-				margin-top: .07em;
-				line-height: 1;
+        @include transition(ease-in-out 0.3s);
 
-				@media(max-width: 480px) {
-				  font-size: 3em;
-				}
-			}
+        &:hover {
+          @include filter(none);
+        }
+      }
+    }
 
-			h2 {
-				font-size: 2em;
-				line-height: 1;
-				margin-top: .2em;
-				color: #9B9B9B;
-			}
+    .right {
+      display: inline-block;
+      text-align: left;
 
-			.social {
-			  margin-top: .6em;
+      h1 {
+        font-size: 4em;
+        margin-top: .07em;
+        line-height: 1;
 
-			  a {
-			    margin-right: .2em;
-			    color: #555;
+        @media (max-width: 480px) {
+          font-size: 3em;
+        }
+      }
 
-					span {
-						text-indent: -10000px;
-						display: inline-block;
-						position: absolute;
-					}
+      h2 {
+        font-size: 2em;
+        line-height: 1;
+        margin-top: .2em;
+        color: #9B9B9B;
+      }
 
-			    @include transition(.5s);
+      .social {
+        margin-top: .6em;
 
-			    &:hover {
-			      color: #2d2d2d;
+        a {
+          margin-right: .2em;
+          color: #555;
 
-			      &.icon-github-sign {
-			        color: #4183c4;
-			      }
-			      &.icon-google-plus-sign {
-			        color: #db4a39;
-			      }
-			      &.icon-twitter-sign {
-			        color: #00a0d1;
-			      }
-			      &.icon-linkedin-sign {
-			        color: #0e76a8;
-			      }
-			      &.icon-facebook-sign {
-			        color: #3b5998;
-			      }
-			    }
-			  }
-			}
-		}
-	}
+          span {
+            text-indent: -10000px;
+            display: inline-block;
+            position: absolute;
+          }
+
+          @include transition(0.5s);
+
+          &:hover {
+            color: #2d2d2d;
+
+            &.icon-github-sign {
+              color: #4183c4;
+            }
+
+            &.icon-google-plus-sign {
+              color: #db4a39;
+            }
+
+            &.icon-twitter-sign {
+              color: #00a0d1;
+            }
+
+            &.icon-linkedin-sign {
+              color: #0e76a8;
+            }
+
+            &.icon-facebook-sign {
+              color: #3b5998;
+            }
+          }
+        }
+      }
+    }
+  }
 }

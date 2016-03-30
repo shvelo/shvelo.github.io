@@ -1,5 +1,5 @@
 @import "http://fonts.googleapis.com/css?family=Open+Sans";
-/* line 5, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../usr/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../usr/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../usr/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../usr/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../usr/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../usr/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../usr/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../usr/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../usr/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -1647,26 +1647,26 @@ ul.icons li [class*=" icon-"] {
   content: "\f115";
 }
 
-/* line 7, ../sass/style.scss */
+/* line 8, ../sass/style.scss */
 body {
   background: #F8F8F8;
   color: #3d3d3d;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 12, ../sass/style.scss */
-body article {
+/* line 13, ../sass/style.scss */
+body section {
   margin: 1em;
   text-align: center;
 }
-/* line 16, ../sass/style.scss */
-body article .left {
+/* line 17, ../sass/style.scss */
+body section .left {
   display: inline-block;
   vertical-align: top;
   width: 12em;
   margin-right: 1em;
 }
-/* line 22, ../sass/style.scss */
-body article .left img {
+/* line 23, ../sass/style.scss */
+body section .left img {
   width: 100%;
   cursor: pointer;
   -webkit-filter: grayscale(100%);
@@ -1676,41 +1676,41 @@ body article .left img {
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
-/* line 27, ../sass/style.scss */
-body article .left img:hover {
+/* line 31, ../sass/style.scss */
+body section .left img:hover {
   -webkit-filter: none;
   filter: none;
 }
-/* line 33, ../sass/style.scss */
-body article .right {
+/* line 37, ../sass/style.scss */
+body section .right {
   display: inline-block;
   text-align: left;
 }
-/* line 37, ../sass/style.scss */
-body article .right h1 {
+/* line 41, ../sass/style.scss */
+body section .right h1 {
   font-size: 4em;
   margin-top: .07em;
   line-height: 1;
 }
 @media (max-width: 480px) {
-  /* line 37, ../sass/style.scss */
-  body article .right h1 {
+  /* line 41, ../sass/style.scss */
+  body section .right h1 {
     font-size: 3em;
   }
 }
-/* line 47, ../sass/style.scss */
-body article .right h2 {
+/* line 51, ../sass/style.scss */
+body section .right h2 {
   font-size: 2em;
   line-height: 1;
   margin-top: .2em;
   color: #9B9B9B;
 }
-/* line 54, ../sass/style.scss */
-body article .right .social {
+/* line 58, ../sass/style.scss */
+body section .right .social {
   margin-top: .6em;
 }
-/* line 57, ../sass/style.scss */
-body article .right .social a {
+/* line 61, ../sass/style.scss */
+body section .right .social a {
   margin-right: .2em;
   color: #555;
   -moz-transition: 0.5s;
@@ -1718,33 +1718,33 @@ body article .right .social a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-/* line 61, ../sass/style.scss */
-body article .right .social a span {
+/* line 65, ../sass/style.scss */
+body section .right .social a span {
   text-indent: -10000px;
   display: inline-block;
   position: absolute;
 }
-/* line 69, ../sass/style.scss */
-body article .right .social a:hover {
+/* line 73, ../sass/style.scss */
+body section .right .social a:hover {
   color: #2d2d2d;
 }
-/* line 72, ../sass/style.scss */
-body article .right .social a:hover.icon-github-sign {
+/* line 76, ../sass/style.scss */
+body section .right .social a:hover.icon-github-sign {
   color: #4183c4;
 }
-/* line 75, ../sass/style.scss */
-body article .right .social a:hover.icon-google-plus-sign {
+/* line 80, ../sass/style.scss */
+body section .right .social a:hover.icon-google-plus-sign {
   color: #db4a39;
 }
-/* line 78, ../sass/style.scss */
-body article .right .social a:hover.icon-twitter-sign {
+/* line 84, ../sass/style.scss */
+body section .right .social a:hover.icon-twitter-sign {
   color: #00a0d1;
 }
-/* line 81, ../sass/style.scss */
-body article .right .social a:hover.icon-linkedin-sign {
+/* line 88, ../sass/style.scss */
+body section .right .social a:hover.icon-linkedin-sign {
   color: #0e76a8;
 }
-/* line 84, ../sass/style.scss */
-body article .right .social a:hover.icon-facebook-sign {
+/* line 92, ../sass/style.scss */
+body section .right .social a:hover.icon-facebook-sign {
   color: #3b5998;
 }
